@@ -15,5 +15,6 @@ class itemViewHolder (view: View) : RecyclerView.ViewHolder(view) {
 
     fun render(affirmations: Affirmations, context: Context){
         binding.principalText.text = context.resources.getString(affirmations.affirmationResourceId)
+        binding.principalView.setImageResource(affirmations.imageResourceId)
     }
 }

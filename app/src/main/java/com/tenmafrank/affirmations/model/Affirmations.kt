@@ -1,4 +1,9 @@
 package com.tenmafrank.affirmations.model
 
-data class Affirmations (val affirmationResourceId: Int) {
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+data class Affirmations (
+    @StringRes val affirmationResourceId: Int,
+    @DrawableRes val imageResourceId: Int) {
 }
